@@ -15,270 +15,249 @@
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="./assets/png/logo_0.png" alt="logo">
-                    <p>Plants</p>
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__navbar">
+                <div class="header__navbar-item">
+                    <div class="header__logo">
+                        <img src="./assets/png/logo_0.png" alt="logo">
+                        <p>Plants</p>
+                    </div>
+                    <ul class="header__nav">
+                        <li class="header__nav-item"><a href="#home">Home</a></li>
+                        <li class="header__nav-item"><a href="#about">About us</a></li>
+                        <li class="header__nav-item"><a href="#service">Service</a></li>
+                        <li class="header__nav-item"><a href="#prices">Prices</a></li>
+                        <li class="header__nav-item"><a href="#contacts">Contacts</a></li>
+                    </ul>
+                    <img src="./assets/png/burger.png" alt="menu" class="burger">
                 </div>
-                <ul class="nav">
-                    <li class="nav-item home"><a href="#home">Home</a></li>
-                    <li class="nav-item about"><a href="#about">About us</a></li>
-                    <li class="nav-item service"><a href="#service">Service</a></li>
-                    <li class="nav-item price"><a href="#prices">Prices</a></li>
-                    <li class="nav-item contact"><a href="#contacts">Contacts</a></li>
-                </ul>
-                <img src="./assets/png/burger.png" alt="menu" class="burger">
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
  <!---SECTION WELCOME-->   
     <main class="main">
-        <section class="welcome">
-            <div class="container">
-                 <div class="welcome-section">
-                    <div class="leafs">
-                        <img src="./assets/png/leafs_1.png" alt="leafs">
-                    </div>
-                    <div class="decsription">
-                        <h1>We grow <span style="color: #499A18;">plants</span> and give you oxygen</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <button class="btn">LEARN MORE</button>    
-                    </div>
-                 </div>
-            </div>
+
+        <section class="section section__background_green">
+            <div class="section__welcome">
+                <div class="section_picture-welcome"></div>
+                <div class="section__text">
+                    <h1>We grow <span style="color: #499A18;">plants</span> and give you oxygen</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <button class="button">LEARN MORE</button>    
+                </div>
+             </div>
         </section>
 
  <!---SECTION ABOUT-->
 
-        <section class="about" id="about">
-            <div class="container">
-                <div class="about-section">
-                    <div class="decsription-about">
-                        <h2><span style="color: #499A18;">We are</span><span style="color: #E06733;"> professional</br>experienced </span><span style="color: #499A18;">gardeners</span> </h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                    </div>
-                    <div class="pic-about">
-                        <img src="./assets/png/houseplant_2.png" alt="houseplant">
-                    </div>
+        <section class="section section__background_white" id="about">
+            <div class="section__about">
+                <div class="section__text-about">
+                    <h2><span style="color: #499A18;">We are</span><span style="color: #E06733;"> professional</br>experienced </span><span style="color: #499A18;">gardeners</span> </h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
                 </div>
+                <div class="section_picture-about"></div>
             </div>
         </section>
 
  <!---SECTION SERVICE-->  
 
-        <section class="service" id="service">
-            <div class="container">
-                <div class="service-block">
-                    <div class="service-content">
-                        <h2>Service and our projects</h2>
-                        <div class="services-btns">
-                            <button class="gardens btn">Gardens</button>
-                            <button class="lawn btn">Lawn</button>
-                            <button class="planting btn">Planting</button>
-                        </div>
+        <section class="section section__background_green" id="service">
+            <div class="section__service">
+                <div class="section__service-header">
+                    <h2>Service and our projects</h2>
+                    <div class="section__service-button-header">
+                        <button class="section__service-button">Gardens</button>
+                        <button class="section__service-button">Lawn</button>
+                        <button class="section__service-button">Planting</button>
                     </div>
-                    <div class="pic-service">
-                        <div class="block">
-                            <div class="service-item1">
-                                <img src="./assets/png/first.png" alt="Garden care">
-                                <div class="service-description">
-                                    <p class="style-header">Garden care</p>
-                                    <p class="style-paragraph">Lorem Ipsum has been the industry</p>
-                                </div>
+                </div>
+
+                <div class="section__service-content">
+                    <div class="section__service-content-blocks">
+                        <img src="./assets/png/first.png" alt="Garden care">
+                            <div class="section__service-text">
+                                <p class="section__service-text-header">Garden care</p>
+                                <p class="section__service-text-description">Lorem Ipsum has been the industry</p>
                             </div>
-                        </div>
-                        <div class="block">
-                            <div class="service-item2">
-                                <img src="./assets/png/second.png" alt="Planting">
-                                <div class="service-description">
-                                    <p class="style-header">Planting</p>
-                                    <p class="style-paragraph">Lorem Ipsum has been the industry</p>
-                                </div>    
-                            </div>
-                        </div>
-                        
-                        <div class="block">
-                            <div class="service-item3">
-                                <img src="./assets/png/third.png" alt="Lawn care">
-                                <div class="service-description">
-                                    <p class="style-header">Lawn care</p>
-                                    <p class="style-paragraph">Lorem Ipsum has been the industry</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-        
-        
-                        <div class="block">
-                            <div class="service-item4">
-                                <img src="./assets/png/forth.png" alt="Planting">
-                                <div class="service-description">
-                                    <p class="style-header">Planting</p>
-                                    <p class="style-paragraph">Lorem Ipsum has been the industry</p>
-                                </div>  
-                            </div>
-                        </div>
-                       
-        
-        
-        
-                        <div class="block">
-                            <div class="service-item5">
-                                <img src="./assets/png/fifth.png" alt="Garden care">
-                                <div class="service-description">
-                                    <p class="style-header">Garden care</p>
-                                    <p class="style-paragraph">Lorem Ipsum has been the industry</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-        
-        
-                        <div class="block block-last">
-                            <div class="service-item6">
-                                <img src="./assets/png/sixth.png" alt="Planting">
-                                <div class="service-description">
-                                    <p class="style-header">Planting</p>
-                                    <p class="style-paragraph">Lorem Ipsum has been the industry</p>
-                                </div>  
-                            </div>
-                        </div>
                     </div>
+
+                    <div class="section__service-content-blocks">
+                        <img src="./assets/png/second.png" alt="Planting">
+                            <div class="section__service-text">
+                                <p class="section__service-text-header">Planting</p>
+                                <p class="section__service-text-description">Lorem Ipsum has been the industry</p>
+                            </div>    
+                    </div>
+                    
+                    <div class="section__service-content-blocks">
+                        <img src="./assets/png/third.png" alt="Lawn care">
+                            <div class="section__service-text">
+                                <p class="section__service-text-header">Lawn care</p>
+                                <p class="section__service-text-description">Lorem Ipsum has been the industry</p>
+                            </div>
+                    </div>
+                    
+                    <div class="section__service-content-blocks">
+                        <img src="./assets/png/forth.png" alt="Planting">
+                            <div class="section__service-text">
+                                <p class="section__service-text-header">Planting</p>
+                                <p class="section__service-text-description">Lorem Ipsum has been the industry</p>
+                            </div> 
+                    </div>
+                   
+                    <div class="section__service-content-blocks">
+                        <img src="./assets/png/fifth.png" alt="Garden care">
+                            <div class="section__service-text">
+                                <p class="section__service-text-header">Garden care</p>
+                                <p class="section__service-text-description">Lorem Ipsum has been the industry</p>
+                            </div>
+                    </div>
+                    
+                    <div class="section__service-content-blocks">
+                        <img src="./assets/png/sixth.png" alt="Planting">
+                            <div class="section__service-text">
+                                <p class="section__service-text-header">Planting</p>
+                                <p class="section__service-text-description">Lorem Ipsum has been the industry</p>
+                            </div> 
+                    </div>
+
+
                 </div>
             </div>
         </section>
 
 <!---SECTION PRICE-->        
 
-        <section class="prices" id="prices">
-            <div class="container">
-                <div class="price-wrapper">
-                    <div class="prices">
-                        <h2>Prices</h2>
-                        <div class="prices-item">
-                            <div class="prices-items">
-                                <button class="price-item">
-                                    <p>Basics</p>
-                                    <div class="accordion-btn">
-                                        <img src="./assets/png/accordion_btn_down2x.png">
-                                    </div>
-                                </button>
-                                <div class="opened">
-                                    <div class="open_block">
-                                        <div class="open-basics-arrow">
-                                            <p class="open-rate">Basics</p>
-                                            <div class="accordion-btn-up">
-                                                <img src="./assets/png/accordion_btn.png">
-                                            </div>
-                                        </div>
-                                        <div class="divider"></div>
-                                        <p class="about-price">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                                        <p class="price-per-hour"><span style="color: #E06733;">$15</span>/ per hour</p>
-                                        <button class="order">Order</button>
-                                    </div>
+        <section class="section section__background_white" id="prices">
+            <div class="section__price">
+                <div class="section__price-select-tariff">
+                    <h2>Prices</h2>
+                    <div class="section__price-accordion-block">
+                        <div class="section__price-accordion">
+                            
+                            <button class="section__price-accordion-button">
+                                <p>Basics</p>
+                                <div class="section__price-accordion-button_s">
+                                    <img src="./assets/png/accordion_btn_down2x.png">
                                 </div>
-                                <button class="price-item">
-                                    <p>Standard</p>
-                                    <div class="accordion-btn">
-                                        <img src="./arrow.svg">
-                                    </div>
-                                </button>
-                                <div class="opened">
-                                    <div class="open_block">
-                                        <div class="open-basics-arrow">
-                                            <p class="open-rate">Standart</p>
-                                            <div class="accordion-btn-up">
-                                                <img src="./assets/png/accordion_btn.png">
-                                            </div>
+                            </button>
+
+                            <!-- <div class="opened">
+                                <div class="open_block">
+                                    <div class="open-basics-arrow">
+                                        <p class="open-rate">Basics</p>
+                                        <div class="accordion-btn-up">
+                                            <img src="./assets/png/accordion_btn.png">
                                         </div>
-                                        <div class="divider"></div>
-                                        <p class="about-price">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                                        <p class="price-per-hour"><span style="color: #E06733;">$25</span>/ per hour</p>
-                                        <button class="order">Order</button>
                                     </div>
-                                </div> 
-                                <button class="price-item">
-                                    <p>Pro care</p>
-                                    <div class="accordion-btn">
-                                        <img src="./arrow.svg">
-                                    </div>
-                                </button>
-                                <div class="opened">
-                                    <div class="open_block">
-                                        <div class="open-basics-arrow">
-                                            <p class="open-rate">Pro care</p>
-                                            <div class="accordion-btn-up">
-                                                <img src="./assets/png/accordion_btn.png">
-                                            </div>
-                                        </div>
-                                        <div class="divider"></div>
-                                        <p class="about-price">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                                        <p class="price-per-hour"><span style="color: #E06733;">$35</span>/ per hour</p>
-                                        <button class="order">Order</button>
-                                    </div>
+                                    <div class="divider"></div>
+                                    <p class="about-price">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="price-per-hour"><span style="color: #E06733;">$15</span>/ per hour</p>
+                                    <button class="order">Order</button>
                                 </div>
-                            </div>
+                            </div> -->
+
+                            <button class="section__price-accordion-button">
+                                <p>Standard</p>
+                                <div class="section__price-accordion-button_s">
+                                    <img src="./assets/png/accordion_btn_down2x.png">
+                                </div>
+                            </button>
+
+                            <!-- <div class="opened">
+                                <div class="open_block">
+                                    <div class="open-basics-arrow">
+                                        <p class="open-rate">Standart</p>
+                                        <div class="accordion-btn-up">
+                                            <img src="./assets/png/accordion_btn.png">
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <p class="about-price">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="price-per-hour"><span style="color: #E06733;">$25</span>/ per hour</p>
+                                    <button class="order">Order</button>
+                                </div>
+                            </div>  -->
+
+                            <button class="section__price-accordion-button">
+                                <p>Pro care</p>
+                                <div class="section__price-accordion-button_s">
+                                    <img src="./assets/png/accordion_btn_down2x.png">
+                                </div>
+                            </button>
+
+                            <!-- <div class="opened">
+                                <div class="open_block">
+                                    <div class="open-basics-arrow">
+                                        <p class="open-rate">Pro care</p>
+                                        <div class="accordion-btn-up">
+                                            <img src="./assets/png/accordion_btn.png">
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <p class="about-price">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="price-per-hour"><span style="color: #E06733;">$35</span>/ per hour</p>
+                                    <button class="order">Order</button>
+                                </div>
+                            </div> -->
+
                         </div>
                     </div>
-                    <div class="block2">
-                        <div class="title-call-us">
-                            <h2>Our best <span style="color: #499A18;">gardeners</span> are ready to help you</h2>
-                            <button class="call-us btn">Contact us</button>
-                        </div>
-        
-                        <div class="leafs2">
-                            <img src="./assets/png/leafs_3.png" alt="Leafs">
-                        </div>
-                    </div>   
                 </div>
 
-                
+
+                <div class="section__price-header">
+                    <div class="section__price-title">
+                        <h2>Our best <span style="color: #499A18;">gardeners</span> are ready to help you</h2>
+                        <button class="section__price-button">Contact us</button>
+                    </div>
+                    <div class="section__price-picture"></div>
+                </div>   
             </div>
         </section>
 
 <!---SECTION CONTACT-->
 
-        <section class="contacts">
-            <h2 class="contact-title">Contact us</h2>
-            <div class="container contact-items">
-                <img src="./assets/png/contact_woman.png" alt="Woman" class="woman">
-                <button class="contact_form">City
-                </button>
-            </div>                
+        <section class="section section__background_green">
+            <div class="section__contact">
+            <h2 class="contact__title">Contact us</h2>
+            <div class="section__contact-address">
+                <img src="./assets/png/contact_woman.png" alt="Girl">
+                <button class="section__contact-form">City</button>
+            </div>             
         </section>
     </main>
 
 <!---FOOTER-->
 
-    <footer>
-        <div class="content">
-            <div class="footer">
-                <div class="footer-data">
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__date">
+                <div class="footer__date-info">
                     <p>©</p>
                     <p>2023</p>
                     <a href="https://github.com/koftheast">github</a>
                 </div>
             </div>
             <a href="https://github.com/koftheast">Rolling Scopes School</a>
-            <div class="social-list">
-                <div class="social-media">
+            <div class="footer__social-list">
+                <div class="footer__social-media">
                     <img src="./assets/png/inst.png" alt="instagram">
                 </div>
-                <div class="social-media">
+                <div class="footer__social-media">
                     <img src="./assets/png/fb.png" alt="facebook">
                 </div>
-                <div class="social-media">
+                <div class="footer__social-media">
                     <img src="./assets/png/tw.png" alt="twitter">
                 </div>
-                <div class="social-media">
+                <div class="footer__social-media">
                     <img src="./assets/png/pinterest.png" alt="pinterest">
                 </div>
             </div>
         </div>
-        
     </footer>
 </body>
 </html>
