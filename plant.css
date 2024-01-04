@@ -53,9 +53,7 @@ li {
 .header__logo p {
   display: flex;
   align-items: center;
-  font-family: 'Inika';
   font-size: 16px;
-  font-weight: 400;
   line-height: 21px;
   text-align: left;
 }
@@ -213,6 +211,8 @@ div.section_picture-about {
 /* SERVICE */
 
 .section__service {
+    display: flex;
+    flex-direction: column;
     max-width: 1222px;
     margin: 0 auto;
     padding: 40px 50px 121px 50px;
@@ -238,17 +238,16 @@ div.section_picture-about {
 }
 
 .section__service-button {
-    justify-content: flex-end;
+    justify-content: space-between;
     height: 50px;
     width: 161px;
-    margin-right: 38px;
+    margin-right: 34px;
     border: 1px solid #E06733;
     border-radius: 5px;
     background-color: transparent;
 
     /* text */
     font-size: 20px;
-    line-height: 26px;
     color: #E06733;
     
 }
@@ -275,7 +274,9 @@ div.section_picture-about {
 
 .section__service-text {
     border: 1px solid #E3E1D5;
+    border-top: none;
     border-radius: 0px 0px 20px 20px;
+    margin-top: -4px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -291,7 +292,6 @@ div.section_picture-about {
 }
 
 .section__service-text-description {
-    font-family: 'Inter';
     font-size: 16px;
     line-height: 20px;
     color: #717171;
@@ -315,7 +315,6 @@ div.section_picture-about {
     line-height: 48px;
     color: #000000;
 }
-
 
 .section__price-accordion-block {
     box-sizing: border-box;
@@ -346,7 +345,6 @@ div.section_picture-about {
     height: 18px;
     padding-left: 40px;
     padding-top: 16px;
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
@@ -468,7 +466,6 @@ div.section_picture-about {
     /* text */
     text-align: left;
     color: #717171;
-    font-family: "Inter";
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 0.05em;
@@ -504,7 +501,6 @@ div.section_picture-about {
     font-family: 'Inter';
     font-size: 20px;
     text-align: left;
-
 }
 
 .footer__date-info {
@@ -512,19 +508,13 @@ div.section_picture-about {
     justify-content: space-between;
     align-items: baseline;
     width: 169px;
-    
-    /* text */
-    font-family: 'Inter';
-    font-size: 20px;
     line-height: 50px;
-    text-align: left;
 }
 
 .footer__container a {
     margin: 0;
     font-family: 'Inter';
     font-size: 20px;
-    text-align: left;
 }
 
 .footer__social-list {
@@ -546,66 +536,49 @@ div.section_picture-about {
     }
     
     div.header__container {
-        max-width: 768px;
+        padding: 35px 50px;
         margin: 0 auto;
     }
     
     .header__navbar-item {
         max-width: 668px;
-        /* height: 47px; */
-        padding: 35px 50px;
         margin: 0 auto;
     }
-    
-
 
 /* WELCOME 768px*/
 
 section {
-    display: block;
     max-width: 768px;
 }
 
 .section__welcome {
     flex-direction: row-reverse;
-    max-width: 768px;  
 }
 
 div.section_picture-welcome {
     width: 280px;
-    margin-top: 0;
-    margin-right: 0;
-    background-image: url("./assets/png/leafs_1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color:  #EDF2EC
 }
-
 
 .section__text {
     max-width: 346px;
-    margin: 0;
+}
+
+h1,
+.section__text p  {
+    max-width: 341px;
 }
 
 h1 {
-    max-width: 341px;
     font-size: 35px;
     line-height: 50px;
     text-align: left;
 }
 
 .section__text p {
-    max-width: 341px;
     font-size: 16px;
     line-height: 25px;
     margin-top: 30px;
 }
-
-
-.section__text .button {
-    margin-top: 30px;
-}
-
 
 /* ABOUT 768px*/
 
@@ -632,7 +605,6 @@ div.section_picture-about {
     line-height: 46px;
     text-align: center;
     margin: 0 auto;
-
 }
 
 .section__text-about p {
@@ -640,10 +612,8 @@ div.section_picture-about {
     margin-top: 40px;
     margin-bottom: 40px;
 }
-
     
 /* SERVICE 768px*/
-
 
 .section__service {
     max-width: 768px;
@@ -652,14 +622,12 @@ div.section_picture-about {
 .section__service-header {
     flex-flow: column;
     max-width: 559px;
-    padding: 0px 159px 40px 0px;
+    padding: 0 159px 40px 0;
 }
-
 
 .section__service-header h2 {
     font-size: 35px;
     line-height: 45px;
-    padding-bottom: 40px;
 }
 
 .section__service-button-header {
@@ -680,8 +648,6 @@ div.section_picture-about {
 .section__service-content-blocks img {
     max-width: 281px;
 }
-
-
   
 /* PRICE 768px */
 
@@ -689,17 +655,6 @@ div.section_picture-about {
         max-width: 768px;
         justify-content: space-between;
         padding: 40px 50px 88px 50px;
-    }
-
-
-    .section__price-select-tariff h2{
-        max-width: 135px;
-        font-size: 35px;
-        text-align: center;
-    }
-
-    .section__price-accordion-block {
-        margin-top: 50px;
     }
 
     .section__price-header  {
@@ -715,26 +670,19 @@ div.section_picture-about {
         /* text */
         font-size: 25px;        
         line-height: 35px;
-        letter-spacing: 0em;
         text-align: left;
     }
     
-
     .section__price-button {
         width: 162px;
-        height: 50px;
         margin: 0;
     }
     
     .section__price-picture {
         width: 152px;
         height: 175px;
-        margin: 0;
         margin-top: 34px;
     }
-
-
-
 
 /* CONTACTS  768px*/
 
@@ -747,7 +695,6 @@ div.section_picture-about {
     }
 
     .section__contact-address {
-        display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
         margin-top: 100px;
@@ -759,7 +706,6 @@ div.section_picture-about {
         width: 200px;
         padding-left: 17px;
         margin-top: 249px;
-
     }
 
     .section__contact-form {
@@ -767,19 +713,18 @@ div.section_picture-about {
         margin-right: 0;
     }
 
-
-
  /* FOOTER  768px*/
 
-    .footer__container {
+    .footer {
         max-width: 768px;
+    }
+
+    .footer__container {
         flex-direction: column;
-        width: 210px;
+        max-width: 240px;
         margin: 0 auto;
         justify-content: center;
-        padding-top: 33px;
         line-height: 24px;
-        align-items: center;
         text-align: center;
     }
 
@@ -789,7 +734,7 @@ div.section_picture-about {
         width: 173px;
     }
 
-    .footer__date-info p{
+    .footer__date-info p {
         font-size: 20px;
         font-weight: 400;
         text-align: left;
@@ -807,7 +752,6 @@ div.section_picture-about {
 
 }
 
-
 /* MEDIA 380*/
 
 @media screen and (max-width: 380px){
@@ -815,14 +759,13 @@ div.section_picture-about {
 /* HEADER 380px*/
 
     header {
-        display: block;
         max-width: 380px;
+        padding: 0;
     }
-    
+
     div.header__container {
-        max-width: 380px;
-        margin: 0 auto;
-    } 
+        padding: 0;
+    }
     
     ul.header__nav {
         display: none;
@@ -838,7 +781,7 @@ div.section_picture-about {
     .header__navbar-item {
         max-width: 330px;
         margin: 0 auto;
-        padding: 36px 0;
+        padding: 36px 25px;
     }
     
     .logo {
@@ -850,9 +793,6 @@ div.section_picture-about {
       text-align: left;
     
     }
-
-
-
 
 /* WELCOME 380 */
 
@@ -939,8 +879,6 @@ div.section_picture-about {
         margin: 0 auto;
     }
 
-
-
 /* SERVICE 380 */
 
 .section__service {
@@ -949,14 +887,12 @@ div.section_picture-about {
     padding-top: 30px;
 }
     
-
 .section__service-header {
     padding: 0 0 40px 0;
     display: flex;
     flex-flow: column;
     max-width: 252px;
 }
-
 
 .section__service-header h2 {
     width: 187px;
@@ -965,14 +901,12 @@ div.section_picture-about {
     line-height: 32px;
 }
 
-
 .section__service-button-header {
     display: flex;
     flex-wrap: wrap;
     width: 252px;
     padding: 0px;
 }
-
 
 .section__service-button {
     justify-content: flex-start;
@@ -990,7 +924,6 @@ div.section_picture-about {
     margin-bottom: 9px;
 }
 
-
 .section__service-content {
     max-width: 280px;
     padding-bottom: 27px;
@@ -1001,23 +934,10 @@ div.section_picture-about {
     width: 258px;
 }
 
-
 .section__service-content-blocks {
     width: 258px;
-    margin: 0px;
     padding-bottom: 34px;
 }
-
-.section__service-content-blocks:last-child {
-    padding-bottom: 0px;
-}
-
-
-
-
-
-
-
 
 /* PRICE 380 */
 
@@ -1084,7 +1004,6 @@ div.section_picture-about {
     align-items: flex-end;
 }
 
-
 .section__price-title h2 {
     max-width: 230px;
     font-size: 20px;
@@ -1094,7 +1013,6 @@ div.section_picture-about {
     padding-top: 14px;
 }
 
-
 .section__price-button {
     width: 121px;
     padding: 12px 0;
@@ -1102,9 +1020,6 @@ div.section_picture-about {
     line-height: 20px;
     margin: 0 auto;
 }
-
-
-
 
 /* CONTACTS 380px */
 
@@ -1144,42 +1059,23 @@ div.section_picture-about {
     margin-bottom: 132px;
 }
 
-
  /* FOOTER 380px */
 
+ .footer {
+    max-width: 380px;
+}
+
  .footer__container {
-    max-width: 210px;
     flex-direction: column;
-    margin: 0 auto;
-    justify-content: center;
+    max-width: 240px;
     padding: 22px 25px;
-    line-height: 24px;
     align-items: center;
-    text-align: center;
 }
 
 .footer__date-info {
     display: flex;
     justify-content: space-between;
     width: 173px;
-    padding-right: 0;
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
 }
-
-.footer__date-info a{
-    margin: 0;
-    display: flex;
-    justify-content:center;
-    align-items: center;     
-}
-
-.footer__social-media {
-    width: 188px;
-}
-
 
 }
