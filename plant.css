@@ -8,32 +8,34 @@ body {
     margin: 0 auto;
 }
 
-main {
-    display: block;
-  }
+/* TYPOGRAPHY */
 
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-}  
-
-img {
-    border-style: none;
+h2 {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
 }
 
+p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+}
 
 /* HEADER */
 
 header {
-    display: block;
     background-color: #EDF2EC;
 }
 
 div.header__container {
     max-width: 1222px;
     margin: 0 auto;
+    padding: 42px 50px;
 }
-
 
 li {
     list-style: none;
@@ -42,7 +44,6 @@ li {
 .header__navbar-item {
     display: flex;
     justify-content: space-between;
-    padding: 42px 50px;
 }
 
 .header__logo {
@@ -52,12 +53,11 @@ li {
 .header__logo p {
   display: flex;
   align-items: center;
-  font-family: Inika;
+  font-family: 'Inika';
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
   text-align: left;
-
 }
 
 .header__logo img {
@@ -74,7 +74,6 @@ ul.header__nav {
 }
 
 .header__nav-item{
-    display: flex; 
     padding-right: 46px;
 }
 
@@ -83,15 +82,12 @@ ul.header__nav {
 }
 
 a {
-    font-family: Inika;
+    font-family: 'Inika';
     font-size: 16px;
     line-height: 50px;
-    letter-spacing: 0em;
     text-align: left;
-    white-space: nowrap;
     text-decoration: none;
     color: #010201;
-    font-weight: 400;
 }
 
 a:hover {
@@ -103,24 +99,10 @@ img.burger {
     display: none;
 }
 
-
-
-
-
-
-
 /* WELCOME */
 
-
-.main {
-    display: block;
-    
-}
-
 section {
-    display: block;
     margin: 0 auto;
-    
 }
 
 .section__background_green {
@@ -131,14 +113,12 @@ section {
     background-color: #FFFFFF;
 }
 
-
 .section__welcome {
     display: flex;
     justify-content: space-between;
     max-width: 1222px;
     margin: 0 auto;
     padding: 62px 50px 62px 50px;
-    background-color: #EDF2EC;
 }
 
 div.section_picture-welcome {
@@ -146,16 +126,14 @@ div.section_picture-welcome {
     background-image: url("./assets/png/leafs_1.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-color:  #EDF2EC
 }
-
 
 .section__text {
     max-width: 549px;
 }
 
 h1 {
-    font-family: Inter;
+    font-family: 'Inter';
     font-size: 45px;
     font-weight: 700;
     line-height: 50px;
@@ -163,17 +141,12 @@ h1 {
 }
 
 .section__text p {
-    max-width: 525.44px;
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 35px;
+    max-width: 524px;
     text-align: left;
     color: #636060;
     margin-top: 42px;
     max-width: 526px;
 }
-
 
 .section__text .button {
     margin-top: 48px;
@@ -200,57 +173,22 @@ h1 {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
 /* ABOUT */
-
 
 .section__about {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1222px;
-    padding: 93px 50px;
+    padding: 92px 50px;
     margin: 0 auto;
-    background: #FFFFFF;
 }
 
 .section__text-about {
     display: flex;
     flex-direction: column;
     padding-right: 40px;
-}
-
-div.section_picture-about {
-    display: flex;
-    align-items: flex-end;
-    width: 428px;
-    height: 428px;
-    background-image: url("./assets/png/houseplant_2.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color:  #FFFFFF;
-}
-
-.section__text-about h2 {
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 52px;
-    margin-bottom: 40px;
-}
-
-.section__text-about p {
     max-width: 605px;
-    left: 109px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -259,15 +197,26 @@ div.section_picture-about {
     color: #636060;
 }
 
+.section__text-about h2 {
+    margin-bottom: 40px;
+}
+
+div.section_picture-about {
+    align-items: flex-end;
+    width: 428px;
+    height: 428px;
+    background-image: url("./assets/png/houseplant_2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 /* SERVICE */
 
 .section__service {
-    background-color: #EDF2EC;
     max-width: 1222px;
     margin: 0 auto;
     padding: 40px 50px 121px 50px;
 }
-
 
 .section__service-header {
     display: flex;
@@ -275,24 +224,18 @@ div.section_picture-about {
     padding-bottom: 90px;
 }
 
-
 .section__service-header h2 {
     max-width: 306px;
-    font-family: Inika;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 52px;
     text-align: left;
     font-style: normal;
     color: #499A18;   
 }
 
 .section__service-button-header {
-    padding-top: 29px ;
     display: flex;
+    padding-top: 29px ;
     max-width: 559px;
 }
-
 
 .section__service-button {
     justify-content: flex-end;
@@ -304,9 +247,6 @@ div.section_picture-about {
     background-color: transparent;
 
     /* text */
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 26px;
     color: #E06733;
@@ -333,19 +273,14 @@ div.section_picture-about {
     width: 338px;
 }
 
-
 .section__service-text {
     border: 1px solid #E3E1D5;
     border-radius: 0px 0px 20px 20px;
-    margin-top: -4px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-
 .section__service-text-header {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
@@ -357,20 +292,11 @@ div.section_picture-about {
 
 .section__service-text-description {
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: #717171;
     text-align: center;
 }
-
-
- 
-
-
-
-
 
 /* PRICE */
 
@@ -380,15 +306,12 @@ div.section_picture-about {
     max-width: 1222px;
     margin: 0 auto;
     padding: 40px 50px 115px 50px;
-    background-color: #FFFFFF;
 }
 
 .section__price-select-tariff h2 {
     max-width: 451px;
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
-    font-size: 40px;
     line-height: 48px;
     color: #000000;
 }
@@ -404,7 +327,6 @@ div.section_picture-about {
 
 .section__price-accordion {
     max-width: 250px;
-    /* height: 214px; */
     margin: 34px 41px;
 }
 
@@ -414,7 +336,6 @@ div.section_picture-about {
     justify-content: space-between;
     width: 250px;
     height: 50px;
-    background: #EDF2EC;
     border-radius: 20px;
     margin-bottom: 32px;
     border: none;
@@ -426,7 +347,6 @@ div.section_picture-about {
     padding-left: 40px;
     padding-top: 16px;
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
@@ -465,10 +385,7 @@ div.section_picture-about {
 
 .section__price-title h2 {
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
     text-align: right;
     color: #000000;
 }
@@ -483,8 +400,6 @@ div.section_picture-about {
     margin-top: 38px;
    
     /* text */
-    font-family: 'Inika';
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -507,111 +422,11 @@ div.section_picture-about {
     color: #FFFFFF;
 }
 
-
-/* 
-div.open_block_basic {
-    display: none;
-}
-
-.opened {
-    display: none;
-}
-
-div.opened {
-    height: 154px;
-    width: 250px;
-    border-radius: 20px;
-    background-color: #D6E7D2;
-}
-
-
-.open-basics-arrow {
-    display: flex;
-    justify-content: space-between;
-    height: 18px;
-    width: 170px;    
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 20px;
-    text-align: left;
-    color: #000000;
-    margin: 0 auto;
-    padding-top: 16px;
-
-}
-
-
-.divider {
-    width: 164px;
-    height: 0.5px;
-    margin: 12px 40px 6px 40px;
-    background-color: #AEA1A1;
-}
-
-
-.about-price {
-    height: 30px;
-    width: 169px;
-    font-family: Inter;
-    font-size: 10px;
-    font-weight: 300;
-    line-height: 10px;
-    text-align: left;
-    color: #717171;
-    margin: 0 auto;
-}
-
-.price-per-hour {
-    height: 17px;
-    width: 123px;
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-left: 40px;
-    margin-top: 6px;
-    margin-bottom: 12px;
-}
-
-.price-per-hour span {
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #E06733;
-}
-
-button.order {
-    height: 25px;
-    width: 86px;
-    border-radius: 10px;
-    border: none;
-    font-family: Inter;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #717171;
-    margin-left: 40px;
-    cursor: pointer;
-} */
-
-
-
-
-
 /* CONTACTS */
 
 .section__contact {
     max-width: 1222px;
     margin: 0 auto;
-    background-color: #EDF2EC; 
 }
 
 .contact__title { 
@@ -635,7 +450,6 @@ button.order {
 
 .section__contact-address img{
     width: 400px;
-    margin-top: -58px;
     padding-left: 109px;
 }
 
@@ -655,8 +469,6 @@ button.order {
     text-align: left;
     color: #717171;
     font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 0.05em;
@@ -680,13 +492,7 @@ button.order {
     margin-bottom: 10px;
 }
 
-
-
 /* FOOTER */
-
-.footer {
-    background: #FFFFFF;
-}
 
 .footer__container {
     display: flex;
@@ -695,10 +501,8 @@ button.order {
     align-items: center;
     padding: 40px 50px;
     margin: 0 auto;
-    font-family: Inter;
+    font-family: 'Inter';
     font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 0em;
     text-align: left;
 
 }
@@ -710,20 +514,16 @@ button.order {
     width: 169px;
     
     /* text */
-    font-family: Inter;
+    font-family: 'Inter';
     font-size: 20px;
-    font-weight: 400;
     line-height: 50px;
-    letter-spacing: 0em;
     text-align: left;
 }
 
 .footer__container a {
     margin: 0;
-    font-family: Inter;
+    font-family: 'Inter';
     font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 0em;
     text-align: left;
 }
 
@@ -735,10 +535,7 @@ button.order {
 }
 
 
-
-
 /* MEDIA */
-
 
 @media screen and (max-width: 768px){
   
@@ -1102,9 +899,6 @@ div.section_picture-about {
         font-size: 10px;
         line-height: 20px;     
     }
-
-    
-
 
 
 /* ABOUT 380 */
